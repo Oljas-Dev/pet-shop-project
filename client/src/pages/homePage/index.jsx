@@ -2,6 +2,7 @@ import styled from "styled-components";
 import HomepageCategories from "../../components/categories";
 import Header from "../../components/header";
 import HomepageProductsSale from "../../components/products";
+import MainPageForm from "../../components/mainPageForm";
 
 const StyledHomePage = styled.section`
   display: flex;
@@ -15,6 +16,7 @@ function HomePage() {
     <StyledHomePage>
       <Header />
       <HomepageCategories />
+      <MainPageForm />
       <HomepageProductsSale />
     </StyledHomePage>
   );
