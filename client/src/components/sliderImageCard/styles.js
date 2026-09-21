@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const StyledCategoryCard = styled.div`
+export const StyledCategoryCard = styled(Link)`
+  color: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +13,7 @@ export const StyledCategoryCard = styled.div`
   border-radius: 12px;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 `;
 
 export const StyledImage = styled.img`

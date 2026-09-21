@@ -24,7 +24,7 @@ function Nav() {
         <Flex gap={32} component="ul">
           <StyledLink to="/">Main Page</StyledLink>
           <StyledLink to="/categories">Categories</StyledLink>
-          <StyledLink to="all-products">All Products</StyledLink>
+          <StyledLink to="/products">All Products</StyledLink>
           <StyledLink to="/all-sales">All Sales</StyledLink>
         </Flex>
 

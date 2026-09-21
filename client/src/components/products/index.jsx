@@ -8,6 +8,7 @@ function HomepageProductsSale() {
   const headerObj = {
     title: "Sale",
     btnText: "All sales",
+    href: "/all-sales",
   };
 
   useEffect(() => {
@@ -27,8 +28,6 @@ function HomepageProductsSale() {
   const productsWithSale = sliderArray.filter((product) => {
     return product.discont_price > 0;
   });
-
-  console.log(productsWithSale);
 
   return <SliderGroup sliderArray={productsWithSale} headerObj={headerObj} />;
 }

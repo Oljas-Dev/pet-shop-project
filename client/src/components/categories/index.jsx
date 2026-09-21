@@ -8,6 +8,7 @@ function HomepageCategories() {
   const headerObj = {
     title: "Categories",
     btnText: "All categories",
+    href: "/categories",
   };
 
   useEffect(() => {

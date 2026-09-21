@@ -5,6 +5,7 @@ import Categories from "./pages/categories";
 import AllProductsPage from "./pages/allProducts";
 import AllSalesPage from "./pages/allSales";
 import CartPage from "./pages/cart";
+import CategoryProductPage from "./pages/categoryProduct";
 
 function App() {
   return (
@@ -14,10 +15,15 @@ function App() {
           <Route index element={<Navigate replace to="homepage" />} />
 
           <Route path="homepage" index element={<HomePage />} />
-          <Route path="categories" index element={<Categories />} />
-          <Route path="all-products" index element={<AllProductsPage />} />
-          <Route path="all-sales" index element={<AllSalesPage />} />
-          <Route path="cart" index element={<CartPage />} />
+          <Route path="categories" element={<Categories />} />
+          <Route
+            path="categories/:category"
+            element={<CategoryProductPage />}
+          />
+
+          <Route path="products" element={<AllProductsPage />} />
+          <Route path="all-sales" element={<AllSalesPage />} />
+          <Route path="cart" element={<CartPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

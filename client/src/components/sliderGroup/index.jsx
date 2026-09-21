@@ -11,9 +11,12 @@ import {
   StyledSliderContainer,
   StyledSliderHeader,
 } from "./styles";
+import { useNavigate } from "react-router-dom";
 
 function SliderGroup({ sliderArray, headerObj }) {
   const [page, setPage] = useState(1);
+
+  const navigate = useNavigate();
 
   if (!sliderArray) return <p>is loading...</p>;
 
@@ -42,7 +45,9 @@ function SliderGroup({ sliderArray, headerObj }) {
       <StyledSliderHeader>
         <SliderH2>{headerObj.title}</SliderH2>
         <GrayDivider />
-        <StyledButton>{headerObj.btnText}</StyledButton>
+        <StyledButton onClick={() => navigate(headerObj.href)}>
+          {headerObj.btnText}
+        </StyledButton>
       </StyledSliderHeader>
 
       <CarouselContainer>
