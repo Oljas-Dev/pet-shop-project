@@ -5,7 +5,7 @@ import Categories from "./pages/categories";
 import AllProductsPage from "./pages/allProducts";
 import AllSalesPage from "./pages/allSales";
 import CartPage from "./pages/cart";
-import CategoryProductPage from "./pages/categoryProduct";
+import CategoryProductPage from "./pages/categoryProducts";
 
 function App() {
   return (

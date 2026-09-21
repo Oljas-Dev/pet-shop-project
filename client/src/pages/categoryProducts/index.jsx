@@ -6,7 +6,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import PageWithItems from "../../components/pageWithItems";
 
-function CategoryProductPage() {
+function CategoryProductsPage() {
   const [currentCategory, setCurrentCategory] = useState("");
   const { category } = useParams();
   const dispatch = useDispatch();
@@ -59,4 +59,4 @@ function CategoryProductPage() {
   );
 }
 
-export default CategoryProductPage;
+export default CategoryProductsPage;
