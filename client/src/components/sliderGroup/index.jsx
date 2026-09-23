@@ -1,22 +1,16 @@
 import { useState } from "react";
 import SliderImageCard from "../sliderImageCard";
+import HeaderWithButton from "../HeaderWithButton";
 import {
   CarouselContainer,
-  GrayDivider,
-  SliderH2,
-  StyledButton,
   StyledCarousel,
   StyledLeftArrow,
   StyledRightArrow,
   StyledSliderContainer,
-  StyledSliderHeader,
 } from "./styles";
-import { useNavigate } from "react-router-dom";
 
 function SliderGroup({ sliderArray, headerObj }) {
   const [page, setPage] = useState(1);
-
-  const navigate = useNavigate();
 
   if (!sliderArray) return <p>is loading...</p>;
 
@@ -42,13 +36,7 @@ function SliderGroup({ sliderArray, headerObj }) {
 
   return (
     <StyledSliderContainer>
-      <StyledSliderHeader>
-        <SliderH2>{headerObj.title}</SliderH2>
-        <GrayDivider />
-        <StyledButton onClick={() => navigate(headerObj.href)}>
-          {headerObj.btnText}
-        </StyledButton>
-      </StyledSliderHeader>
+      <HeaderWithButton headerObj={headerObj} />
 
       <CarouselContainer>
         <StyledLeftArrow onClick={previousSlide} $disabled={page === 1} />

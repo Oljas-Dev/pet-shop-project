@@ -58,8 +58,8 @@ export const DiscountTag = styled.div`
   font-weight: 600;
   padding: 4px 8px;
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: ${({ $top }) => ($top ? $top : "16px")};
+  right: ${({ $right }) => ($right ? $right : "16px")};
 
   border-radius: 6px;
 `;

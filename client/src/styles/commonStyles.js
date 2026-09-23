@@ -13,6 +13,11 @@ export const StyledH2 = styled.h2`
   font-weight: 700;
 `;
 
+export const StyledH3 = styled.h2`
+  font-size: 40px;
+  font-weight: 700;
+`;
+
 export const StyledFlexCol = styled.div`
   display: flex;
   flex-direction: column;

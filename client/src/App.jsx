@@ -6,6 +6,7 @@ import AllProductsPage from "./pages/allProducts";
 import AllSalesPage from "./pages/allSales";
 import CartPage from "./pages/cart";
 import CategoryProductPage from "./pages/categoryProducts";
+import ItemPage from "./pages/itemPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="products" element={<AllProductsPage />} />
           <Route path="all-sales" element={<AllSalesPage />} />
           <Route path="cart" element={<CartPage />} />
+          <Route path="item/:itemId" element={<ItemPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

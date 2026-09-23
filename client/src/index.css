@@ -8,3 +8,7 @@
 
   font-family: "Montserrat", sans-serif;
 }
+
+.order-modal .ant-modal-content {
+  background: rgb(13, 80, 255);
+}
